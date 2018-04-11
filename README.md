@@ -25,4 +25,12 @@ R scripts useful for statistics
 
 ## run_contrast_d
 
+- calculates Cohen's D effect Size (adjusted for covariates) for runcontrast output
+- dat- main dataframe with all your subject info/data
+- results- results from runcontrast
+- name of group variable (eg. 'Group')
+  - NOTE: Group identifiers CANNOT contain '-' (eg. 'BP-P' must be 'BPP','BP_P',etc)
+  - NOTE: Group identifiers in 'contr' column of runcontrast output must match original data frame in Group column
+- covars= list of covariates (c('age','sex','site'))
+
 ## permutations
