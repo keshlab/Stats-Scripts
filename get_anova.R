@@ -1,4 +1,5 @@
 ## requires cohensd.R and returnAdj.R
+require(car)
 
 ## calculates Anova contrast (type 3) between two groups and effect sizes (Cohen's D)
 ## requires data frame (data)
