@@ -29,6 +29,11 @@ R scripts useful for statistics
 - outputs F stats and p values for group, time and group by time
 - requires your original data frame, a list of measures, list of covariates, list of two interaction terms (eg. Group and Timept) and name of subject id.
 
+## run_contrast
+- returns pairwise contrasts using general linear hypothesis test
+- requires list of regions, matrix of group contrasts, data frame, group name, list of covariates
+- can set group.adjust for multiple comparisons (adjusts all contrasts per region)
+
 ## run_contrast_d
 
 - calculates Cohen's D effect Size (adjusted for covariates) for runcontrast output
