@@ -23,6 +23,12 @@ R scripts useful for statistics
     - Note can only handle two levels
 - list of covariates ( covars=c('age','sex','race'))
 
+## repeated_anova
+
+- Repeated measures anova to calculate a group by time interaction
+- outputs F stats and p values for group, time and group by time
+- requires your original data frame, a list of measures, list of covariates, list of two interaction terms (eg. Group and Timept) and name of subject id.
+
 ## run_contrast_d
 
 - calculates Cohen's D effect Size (adjusted for covariates) for runcontrast output
