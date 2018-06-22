@@ -11,7 +11,6 @@
 #covar<-c('Age_cal','sex','RACE','site','ICV')
 # results<-RunMat(region = c('choroid_plexus'), contrast = dx.mat, data = dat, group = 'DXGROUP_2',covars = covars)
 
-
 library(multcomp)
 
 RunMat <- function(region,contrast,data,group,covars=1,group.adjust="none"){
