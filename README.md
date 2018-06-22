@@ -29,6 +29,11 @@ R scripts useful for statistics
 - outputs F stats and p values for group, time and group by time
 - requires your original data frame, a list of measures, list of covariates, list of two interaction terms (eg. Group and Timept) and name of subject id.
 
+## get_anova_perm
+- run permutation testing for p values
+- also run anova pairwise comparisons
+- make sure effect_size and returnAdj functions are also sourced.
+
 ## run_contrast
 - returns pairwise contrasts using general linear hypothesis test
 - requires list of regions, matrix of group contrasts, data frame, group name, list of covariates
@@ -44,4 +49,4 @@ R scripts useful for statistics
   - NOTE: Group identifiers in 'contr' column of runcontrast output must match original data frame in Group column
 - covars= list of covariates (c('age','sex','site'))
 
-## permutations
+
