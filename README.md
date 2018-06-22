@@ -1,6 +1,19 @@
 # Stats-Scripts
 R scripts useful for statistics
 
+## returnAdj
+-required for effect_size, get_anova, get_anova_perm and runcontrast_d below
+- returns a data.frame with values adjusted for designated covariates
+- Requires:
+  - data: The overarching data.frame
+  - measure: A string for the name of the vector to be adjusted
+  - covars: A vector holding the names of the covariates to be used (but not in an interaction term)
+  - interacts: A vector holding the names of covariates to be used in an interaction term
+  - display: A boolean indicating that the original-adjusted value correlations are to be printed. This defaults to true.
+  - method: A string identifying the mean adjusting methods. This defaults to 'iadj'. The other options include 'smean' and 'null'.
+  - This feature provides you with the option to fetch sample means adjusted based on: Intercept adjusted (iadj), sample mean (smean) or 'null' adjusted.
+  - subset: A conditional expression that returns a vector of booleans the same length as the vector to be adjusted. This can be used to generate the model on only a subset of the data (e.g. Controls only)
+
 ## effect_size
 
 - calculates Cohen's D between two groups and adjusts for covariates
